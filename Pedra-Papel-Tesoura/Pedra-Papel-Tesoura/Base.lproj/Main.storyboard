@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pedra_Papel_Tesoura" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Computador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAK-Cm-fdH">
+                                <rect key="frame" x="127" y="87" width="160" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJi-3Z-Ega">
+                                <rect key="frame" x="145" y="701" width="117" height="39.5"/>
+                                <color key="tintColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Começar"/>
+                                <connections>
+                                    <action selector="comecaButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B9G-QY-RHe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jogador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWc-Pb-cKt">
+                                <rect key="frame" x="149" y="604" width="117" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papel" translatesAutoresizingMaskIntoConstraints="NO" id="DcK-CF-8qn">
+                                <rect key="frame" x="76" y="198" width="262" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="cUE-6T-rwD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tesoura" translatesAutoresizingMaskIntoConstraints="NO" id="YtA-cS-0gX">
+                                <rect key="frame" x="76" y="417" width="262" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="PGQ-U9-5ft"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3B-AP-3Qt">
+                                <rect key="frame" x="149" y="363" width="113" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MJi-3Z-Ega" firstAttribute="top" secondItem="HWc-Pb-cKt" secondAttribute="bottom" constant="69" id="1up-bl-kiy"/>
+                            <constraint firstItem="HWc-Pb-cKt" firstAttribute="top" secondItem="YtA-cS-0gX" secondAttribute="bottom" constant="59" id="Hdf-05-7cB"/>
+                            <constraint firstItem="ZAK-Cm-fdH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="JlA-nE-Exs"/>
+                            <constraint firstItem="DcK-CF-8qn" firstAttribute="top" secondItem="ZAK-Cm-fdH" secondAttribute="bottom" constant="81" id="U8W-ZF-EdR"/>
+                            <constraint firstItem="YtA-cS-0gX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="ZjT-Pc-Lkk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MJi-3Z-Ega" secondAttribute="trailing" constant="152" id="b1i-Hd-dvm"/>
+                            <constraint firstItem="D3B-AP-3Qt" firstAttribute="top" secondItem="DcK-CF-8qn" secondAttribute="bottom" constant="37" id="e9H-w6-2OZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D3B-AP-3Qt" secondAttribute="trailing" constant="172" id="fs8-IJ-YIh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZAK-Cm-fdH" secondAttribute="trailing" constant="127" id="fvx-u8-Cm8"/>
+                            <constraint firstItem="ZAK-Cm-fdH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="gJ4-41-rr2"/>
+                            <constraint firstItem="MJi-3Z-Ega" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="hvA-Xt-2Cd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YtA-cS-0gX" secondAttribute="trailing" constant="76" id="hvJ-ul-SPG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DcK-CF-8qn" secondAttribute="trailing" constant="76" id="kpO-JK-5Qy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MJi-3Z-Ega" secondAttribute="bottom" constant="121.5" id="l9J-3G-6GS"/>
+                            <constraint firstItem="YtA-cS-0gX" firstAttribute="top" secondItem="D3B-AP-3Qt" secondAttribute="bottom" constant="28" id="oaa-vV-Ftr"/>
+                            <constraint firstItem="DcK-CF-8qn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="uIs-Q2-jEq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HWc-Pb-cKt" secondAttribute="trailing" constant="152" id="uiB-Ks-bNR"/>
+                            <constraint firstItem="D3B-AP-3Qt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="wVe-QH-QhW"/>
+                            <constraint firstItem="YtA-cS-0gX" firstAttribute="top" secondItem="DcK-CF-8qn" secondAttribute="bottom" constant="91" id="yRf-eF-jFk"/>
+                            <constraint firstItem="HWc-Pb-cKt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="zrH-hA-KHK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cpuImage" destination="DcK-CF-8qn" id="TQJ-fR-nLY"/>
+                        <outlet property="cpuLabel" destination="ZAK-Cm-fdH" id="R6B-oF-4pj"/>
+                        <outlet property="empateLabel" destination="D3B-AP-3Qt" id="6OA-Ew-irS"/>
+                        <outlet property="jogadorImage" destination="YtA-cS-0gX" id="SW4-rc-D9l"/>
+                        <outlet property="jogadorLabel" destination="HWc-Pb-cKt" id="3KU-4c-yoF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="papel" width="256" height="256"/>
+        <image name="tesoura" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
